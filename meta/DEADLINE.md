@@ -14,7 +14,18 @@ Markdown is transformed into nice-looking HTML.
 
 > **Also, include the GitHub `https` URL to your repository.**
 
-TODO WRITE / REPLACE
+This app allows you to retrieve the definition of a word in English and
+translate it to another language. The languages to choose from are Spanish
+and French.
+The way you use it is by first typing your word in the "Word" text box, then
+selecting between Spanish or French in the "Language" combo box, then clicking
+the "Search" button.
+The application calls the FreeDictionary API to retrieve the definition of the
+word in English and display it in the "Definition" textbox. The application
+then takes that definition and sends it to the LibreTranslate API and
+retrieves the resulting translation to display it in the "Translation"
+textbox. This means that the LibreTranslate API uses the result of the
+FreeDictionary API to carry out the output for the LibreTranslate API.
 
 ## Part 1.2: APIs
 
@@ -28,29 +39,41 @@ TODO WRITE / REPLACE
 ### API 1
 
 ```
-https://.../replace/me
+https://api.dictionaryapi.dev/api/v2/entries/en/ is the default URL.
+https://api.dictionaryapi.dev/api/v2/entries/en/hello is a sample search for the definition of Hello.
 ```
 
-> Replace this line with notes (if needed) or remove it (if not needed).
+This API accepts GET or POST requests.
+This API has a limit of 450 requests per 5 minutes per IP address.
 
 ### API 2
 
 ```
-https://../replace/me
+https://libretranslate.com/translate is the default URL.
+https://libretranslate.com/translate?q=hello&source=en&target=es&format=text&api_key=7658f0e5-fbd3-4b29-86d4-1f95e7594052 is a sample translation of Hello from English to Spanish.
 ```
 
-> Replace this line with notes (if needed) or remove it (if not needed).
+The API "Translate" method only accepts POST requests.
+The API requires an API key which is included in the code.
+The API key has a limit of up to 80 translations / minute.
 
 ## Part 2: New
 
 > What is something new and/or exciting that you learned from working
 > on this project?
 
-TODO WRITE / REPLACE
+I learned more on making the JSON for the API. Additionally, using an API key
+was much simpler than I thought. I now have a better understanding of APIs and
+feel very inspired to work on more projects using them in the future.
 
 ## Part 3: Retrospect
 
 > If you could start the project over from scratch, what do
 > you think might do differently and why?
 
-TODO WRITE / REPLACE
+I would choose to not overcomplicate by trying to add dependencies which I
+did not have to do as well as not mess around with the module-info folder when
+trying to use the APIs. Additionally, I would have researched more API options
+before deciding on the final ones to use rather than try immediately
+implenting the first APIs I thought of work which wasted a large amount of
+time.

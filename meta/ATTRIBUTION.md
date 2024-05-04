@@ -9,13 +9,7 @@ Markdown is transformed into nice-looking HTML.
 
 ### Authored Assets
 
-* Example 1 Asset Name
-  - `resources/path/to/file`
-  - Your Name. Year.
-
-* Example 2 Asset Name
-  - `resources/path/to/file`
-  - Your Name. Year.
+There are none.
 
 ### Assets Authored by Others
 
@@ -23,14 +17,4 @@ Markdown is transformed into nice-looking HTML.
 > you should list it as "Assumed proprietary: using under academic fair use."
 > instead of leaving the license information blank.
 
-* Example 1 Asset Name
-  - `resources/path/to/file`
-  - Author. Year.
-  - URL
-  - License
-
-* Example 2 Asset Name
-  - `resources/path/to/file`
-  - Author. Year.
-  - URL
-  - License
+There are none besides the APIs.
